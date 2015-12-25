@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I like vim because thats what we were taught to use at Purdue
 
 ---
 
@@ -61,6 +61,4 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
----
+Atom because I have been using atom/sublime(only on ubuntu) for quite awhile now to develop in for whatever project I've had to do, I chose it originally because it's free and thought it looked cool. Plus it's simple and there isn't really anything you have to learn in order to use it.
