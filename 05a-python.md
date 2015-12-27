@@ -33,7 +33,13 @@ print list[0] #prints 0
 
 set example:
 
+setlist  = [1,2,3,3] #create a list called setlist
 
+set = set(setlist) # make the list a set, the set conatains {1,2,3}
+
+set =  {1,2,3} #how to make a set directly, use curly braces
+
+print set #prints set([1,2,3])
 
 
 
@@ -43,7 +49,7 @@ set example:
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+
 
 ---
 
