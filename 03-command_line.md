@@ -38,7 +38,11 @@ list contents of a directory, ls -a , doesn't ignore files starting with . , ls 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+It splits up a string through spaces or newlines to execute the substrings as individual arguments, this can be useful because it gives you more flow control and can make long lists of arguments easy to execute. By default it just prints out whatever you input back to the command line. So for example suppose you had 4 files: prog1.py prog1.pyc prog2.py prog2.pyc
+and you wanted to delete just the files with the ".py" extension, a way to do this would be this:
+find . -name "*.py" | xargs rm -rf
+
+so find would return a list of files with the ".py" extension, then this command pipelines the response into xargs which then removes the files one by one, sort of like a for loop in python where one is iterating through a list.
 
 ---
 
