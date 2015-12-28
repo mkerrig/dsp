@@ -49,6 +49,13 @@ print set #prints set([1,2,3])
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
+Python's lambda is basically Python's version of an inline function. It's used to make an anonymous function to quickly return an expression rather than defining an entire new function. An example of how it could be used in a tuple sort function would be as follows:
+
+getkey = lambda item: item[0]
+
+list = [[3, 12], [7, 61], [6, 22], [28, 87], [1,101]]
+
+sorted(list,key=getkey) #returns [[1,101],[3, 12], [6, 22], [7, 61], [28, 87]]
 
 
 ---
@@ -57,7 +64,43 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python list comprehensions are a way to enumerate lists in a way that is much closer to natural human language.
+basic example, the two expressions do the same thing:
+
+list = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+
+list = [2**i for i in range(13)]
+
+map equivalence: 
+
+num = [1, 2, 3] 
+
+doublenum = map(lambda x: x * 2, num) #map
+
+doublenum = [x * 2 for x in values] #list comprehension both return [2,4,6]
+
+filter equivalence:
+
+names = ['Aidan', 'Amy', 'Bobby', 'Derrick', 'Cassandra', 'Alex', 'Joe']
+
+a_names = filter(lambda s: s.startswith('A'), names) #filter
+
+a_names = [ name for name in names if name.startswith('A')] #list comprehension both return ['Aidan','Amy','Alex']
+
+They can do the same exact things, and from what I understand time to run is pretty similar
+
+set comprehension, the following two do the same:
+
+set = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096}
+
+set = {2**i for i in range(13)}
+
+dictionary comprehension example, the following two are the same:
+
+dictionary  = {0: 0, 1: 1, 2: 4, 3: 9}
+
+dictionary = {n: n**2 for n in range(4)} 
+
 
 ---
 
