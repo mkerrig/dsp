@@ -9,11 +9,30 @@
 
 import csv
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+def read_data(data):
+  teams = {}
+  with open(data,'rb') as f:
+    reader = csv.reader(f)
+    index = 0
+    for row in reader:
+      if index ==0:
+        cat = row
+      else:
+        teams[row[cat.index('Team')]] = int(row[cat.index('Goals')])-int(row[cat.index('Goals Allowed')])
+      index+=1
+  return teams
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+
+def get_min_score_difference(teams):
+  minName = 'Default'
+  minNum = 100
+  for key,value in teams.iteritems():
+    if abs(value) < minNum:
+      minNum = abs(value)
+      minName = key
+  print 'The team with the smallest number is: ',minName,' with ',minNum
+
+
+
+get_min_score_difference(read_data('football.csv'))
