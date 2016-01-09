@@ -21,3 +21,4 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'
 fmt = '%d-%b-%Y'
 print "C: " ,daysdiff(fmt,date_start,date_stop),"\n"
+#
