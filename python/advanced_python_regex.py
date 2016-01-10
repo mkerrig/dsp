@@ -1,4 +1,5 @@
 
+
 import csv
 
 def read_data():
@@ -28,5 +29,10 @@ def read_data():
     print degrees,'\n'
     print title, '\n'
     print email,'\n'
+    domain = []
+    for dom in email:
+      domain.append(dom[dom.index('@')+1:-1])
+    print set(domain)
+
 
 read_data()
