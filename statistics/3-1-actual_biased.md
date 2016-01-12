@@ -1,5 +1,5 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
-
+I think this was pretty straight forward, used examples I found in the existing code
  The means are:
 * Actual: 1.02420515504
 * Biased: 2.40367910066
