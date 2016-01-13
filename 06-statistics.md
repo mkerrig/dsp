@@ -102,7 +102,7 @@ So there was a 40% chance (assuming it’s a 50/50 for a brother or sister in th
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+ Bayesian says "There is a 95% probability that the population mean is in this range" whereas frequentist says "We are 95% confident that the true population mean is in this range based on a sample mean" The frequentist approaches with the philosophy that parameters aren’t random variables so when we find intervals for parameters, we call them confidence intervals to distinguish them from probability intervals. The major conceptual difference between Bayesian statistics and frequentist statistics is that, in Bayesian statistics, we consider the parameters to be random, so we can write probability intervals for parameters. For frequentists probabilities are directly related to frequencies of events. Whereas for Bayesians, probability is extended to cover degrees of certainty about statements, and is directly related to our own knowledge about an event.
 
 ---
 
