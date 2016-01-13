@@ -86,7 +86,7 @@ P(E|A)=1
 
 P(E|B)=1/2
 
-P(E) = P(A) P(E|A) + P(B) P(E|B) (Since A and B can’t happen at the same time, they are disjoint events, there for we can use the law of total probability)
+P(E) = P(A) P(E|A) + P(B) P(E|B) (Since A and B can’t happen at the same time, they are disjoint events, therefore we can use the law of total probability)
 
 P(E) = ¼+ 3/8 = 5/8
 
